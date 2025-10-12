@@ -1,0 +1,108 @@
+@define-color bg    #1a1b26; 
+@define-color fg    #a9b1d6; 
+@define-color blk   #24283b; 
+@define-color red   #f7768e; 
+@define-color grn   #9ece6a; 
+@define-color ylw   #e0af68; 
+@define-color blu   #7aa2f7; 
+@define-color mag   #ad8ee6; 
+@define-color cyn   #0db9d7; 
+@define-color brblk #414868; 
+@define-color white #ffffff; 
+@define-color bgpop #1E2030;
+
+* {
+  all:unset;  
+  font-family: "Mononoki Nerd Font Propo";
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 1.0;
+}
+
+window#waybar {
+  background: @bg;
+  color: @fg;
+}
+
+#workspaces button {
+  padding: 3 10px;
+  color: @blu;
+  background: transparent;
+  border-color: @bg;
+  /*border-bottom: 3px solid @bg;*/
+}
+
+#workspaces button.active {
+    color: @grn;
+}
+
+#workspaces button.empty {
+    color: @fg;
+}
+#workspaces button.empty.active {
+    color: @cyn;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+}
+
+button:hover {
+    color: @blu;
+}
+
+#clock,
+#custom-sep,
+#battery,
+#cpu,
+#memory,
+#disk,
+#network,
+#pulseaudio,
+#tray {
+    padding: 5 10px;
+    color: @white;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+#custom-sep {
+    color: @brblk;
+}
+
+#clock {
+    color: @fg;
+}
+
+#battery {
+    color: @mag;
+}
+
+#disk {
+    color: @ylw;
+}
+
+#memory {
+    color: @mag;
+}
+
+#cpu {
+    color: @grn;
+}
+
+#pulseaudio {
+    color: @grn;
+}
+
+#network {
+    color: @blu;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+#tray {
+    background-color: @bg;
+}
+
