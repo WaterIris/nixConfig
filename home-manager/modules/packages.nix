@@ -29,5 +29,6 @@
     rofi
     wezterm
     kitty
+    tmux
   ];
 }

@@ -8,6 +8,7 @@
     ./dunst
     ./waybar
     ./rofi
+    ./tmux
     ./mono
   ];
 }
