@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     inputs.nixvim.packages.${system}.default # enable nixvim flake
     # Global compilers
+    # gcc
     # Terminal apps
     ripgrep # better grep
     fd # better find
@@ -30,5 +31,6 @@
     wezterm
     kitty
     tmux
+    # neovim
   ];
 }
