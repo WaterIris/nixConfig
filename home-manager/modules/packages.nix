@@ -10,10 +10,10 @@
     brightnessctl
     zip
     unzip
-    nethogs
     # Monitoring
     acpi
     usbutils
+    libnotify
     # Gui apps
     firefox
     pavucontrol
@@ -31,6 +31,7 @@
     wezterm
     kitty
     tmux
+    nemo
     # neovim
   ];
 }
