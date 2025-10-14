@@ -1,9 +1,9 @@
 {...}:
 {
   imports = [
-    # ./tmux.nix
     ./git.nix
     ./gtk.nix
+    ./bash.nix
     ./zsh.nix
   ];
 }
