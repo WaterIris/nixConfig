@@ -1,12 +1,19 @@
 {config, pkgs, ...}:
 
 {
-  services.xserver = {
-    videoDrivers = [ "nvidia" ];
-    xkb = {
-      layout = "pl";
-      variant = "";
-      };
+  services = {
+    xserver = {
+      # enable = true;
+      videoDrivers = [ "nvidia" ];
+      xkb = {
+        layout = "pl";
+        variant = "";
+        };
+    };
+    # displayManager = {
+    #   sddm.enable = true;
+    #   defaultSession = "hyprland";
+    # };
   };
     
   hardware.graphics = {

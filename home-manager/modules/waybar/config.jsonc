@@ -1,31 +1,22 @@
 {
 "layer": "top",
 "position": "top", 
+"fixed-center": true,
 
 "modules-left": [
-  "hyprland/workspaces",
-  "custom/sep",
-  "hyprland/window",
-  "custom/sep",
+  "battery",
+  "network",
+  "pulseaudio",
 ],
 
 "modules-center": [
+  "hyprland/workspaces",
 ],
 
 "modules-right": [
-  "custom/sep",
-  "pulseaudio",
-  "custom/sep",
-  "network",
-  "custom/sep",
   "cpu",
-  "custom/sep",
   "memory",
-  "custom/sep",
   "disk",
-  "custom/sep",
-  "battery",
-  "custom/sep",
   "clock",
 ],
 
@@ -94,8 +85,8 @@
 },
 
 "network": {
-  "format": "Online",
-  "format-disconnected": "Disconnected",
+  "format": "󰖩 On",
+  "format-disconnected": "󰖪 Off",
 },
 
 "pulseaudio": {

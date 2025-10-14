@@ -14,7 +14,7 @@
 * {
   all:unset;  
   font-family: "Mononoki Nerd Font Propo";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   opacity: 1.0;
 }
@@ -25,26 +25,29 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 3 10px;
+  margin: 5px 0px;
+  padding: 5px 10px;
   color: @blu;
   background: transparent;
   border-color: @bg;
-  /*border-bottom: 3px solid @bg;*/
+  border-radius: 7px;
 }
 
 #workspaces button.active {
-    color: @grn;
+    background: @blu;
+    color: @bg;
 }
 
 #workspaces button.empty {
     color: @fg;
 }
 #workspaces button.empty.active {
-    color: @cyn;
+    background: @blu;
+    color: @bg;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    color: @red;
 }
 
 button:hover {
@@ -60,14 +63,10 @@ button:hover {
 #network,
 #pulseaudio,
 #tray {
-    padding: 5 10px;
-    color: @white;
-    margin: 5px 0px;
-    border-radius: 5px;
-}
-
-#custom-sep {
-    color: @brblk;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    /*color: @bg;*/
+    border-radius: 7px;
 }
 
 #clock {
@@ -103,6 +102,6 @@ button:hover {
 }
 
 #tray {
-    background-color: @bg;
+    color: @bg;
 }
 
