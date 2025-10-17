@@ -11,28 +11,36 @@
     nixvim.url = "github:WaterIris/nixvim-config";
   };
 
-  outputs = {self, nixpkgs, home-manager, nixvim, ...} @ inputs: 
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      nixvim,
+      ...
+    }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-    in {
-    nixosConfigurations = {
-      alduin = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
-        modules = [
-          ./nixos/configuration.nix
-        ];
+    in
+    {
+      nixosConfigurations = {
+        alduin = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./nixos/configuration.nix
+          ];
+        };
       };
-    };
 
-    homeConfigurations = {
-      "iris@alduin" = home-manager.lib.homeManagerConfiguration {
-        pkgs = pkgs; # Home-manager requires 'pkgs' instance
-        extraSpecialArgs = {inherit inputs;};
-        modules = [
-          ./home-manager/home.nix
-        ];
+      homeConfigurations = {
+        "iris@alduin" = home-manager.lib.homeManagerConfiguration {
+          pkgs = pkgs; # Home-manager requires 'pkgs' instance
+          extraSpecialArgs = { inherit inputs; };
+          modules = [
+            ./home-manager/home.nix
+          ];
+        };
       };
     };
-  };
 }

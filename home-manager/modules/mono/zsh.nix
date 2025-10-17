@@ -1,9 +1,9 @@
-{config, lib, ...}:
+{ config, lib, ... }:
 {
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
-    settings ={
+    settings = {
       add_newline = false;
       directory = {
         truncation_length = 0;
@@ -24,7 +24,7 @@
       };
 
       python = {
-	symbol = " ";
+        symbol = " ";
       };
 
       nix_shell = {
@@ -32,13 +32,13 @@
       };
 
       format = lib.concatStrings [
-      "$hostname"
-      "$directory"
-      "$git_branch"
-      "$git_status"
-      "$python"
-      "$line_break"
-      "$character"
+        "$hostname"
+        "$directory"
+        "$git_branch"
+        "$git_status"
+        "$python"
+        "$line_break"
+        "$character"
       ];
     };
   };
@@ -75,7 +75,7 @@
     '';
 
     shellAliases = {
-      vi = "nvim";     
+      vi = "nvim";
       cd = "z";
       ls = "eza";
       ll = "eza -alh";

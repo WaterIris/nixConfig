@@ -1,4 +1,8 @@
-{pkgs, inputs, ...}:
+{
+  pkgs,
+  inputs,
+  ...
+}:
 {
   home.packages = with pkgs; [
     inputs.nixvim.packages.${system}.default # enable nixvim flake
@@ -30,10 +34,5 @@
     kitty
     tmux
     nemo
-    # neovim
-    # Language servers
-    # lua-language-server
-    # Global compilers
-    # gcc
   ];
 }
