@@ -12,6 +12,8 @@
     brightnessctl
     zip
     unzip
+    fastfetch
+    nixfmt-rfc-style
     # Monitoring
     acpi
     usbutils
@@ -21,6 +23,7 @@
     pavucontrol
     blueman
     obsidian
+    nemo
     # Wayland specific
     wl-clipboard
     hyprpicker
@@ -33,7 +36,5 @@
     wezterm
     kitty
     tmux
-    nemo
-    nixfmt-rfc-style
   ];
 }
