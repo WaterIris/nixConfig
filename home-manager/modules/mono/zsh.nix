@@ -77,7 +77,7 @@
     shellAliases = {
       vi = "nvim";
       cd = "z";
-      ls = "eza";
+      ls = "eza -s type -1";
       ll = "eza -alh";
       tree = "eza --tree";
       tt = "~/.config/tmux/script.sh";

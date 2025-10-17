@@ -34,5 +34,6 @@
     kitty
     tmux
     nemo
+    nixfmt-rfc-style
   ];
 }
