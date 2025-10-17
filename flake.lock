@@ -310,13 +310,13 @@
         "lastModified": 1760731080,
         "narHash": "sha256-GT1pRM+NWp0xYQmdQ6hyn2vYtg/ZuJwisl9C/TT4P5I=",
         "owner": "WaterIris",
-        "repo": "nixvim-config",
+        "repo": "IrisNixvim",
         "rev": "5e8a5d52fbb7c29085939843e5b72287453aa058",
         "type": "github"
       },
       "original": {
         "owner": "WaterIris",
-        "repo": "nixvim-config",
+        "repo": "IrisNixvim",
         "type": "github"
       }
     },
