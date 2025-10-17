@@ -11,8 +11,8 @@
       };
 
       character = {
-        success_symbol = ">";
-        error_symbol = ">";
+        success_symbol = "❯";
+        error_symbol = "❯";
       };
 
       hostname = {
@@ -31,12 +31,17 @@
         symbol = "󱄅 ";
       };
 
+      cmd_duration = {
+        min_time = 1000;
+      };
+
       format = lib.concatStrings [
         "$hostname"
         "$directory"
         "$git_branch"
         "$git_status"
         "$python"
+        "$cmd_duration"
         "$line_break"
         "$character"
       ];
