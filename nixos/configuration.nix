@@ -6,7 +6,6 @@
       ./modules/fonts.nix
       ./modules/bluetooth.nix
       ./modules/graphics.nix
-      ./modules/steam.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
